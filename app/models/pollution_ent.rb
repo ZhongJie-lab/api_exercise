@@ -1,0 +1,2 @@
+class PollutionEnt < ApplicationRecord
+end

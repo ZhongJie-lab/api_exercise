@@ -1,0 +1,21 @@
+<table class="table">
+  <tr>
+    <th>污染源编码</th>
+    <th>污染源名称</th>
+    <th>经度</th>
+    <th>纬度</th>
+    <th>废气排扣数量</th>
+    <th>废水排扣数量</th>
+  </tr>
+  <% @pollution_ents.each do |ent| %>
+    <tr>
+      <td><%= ent.ent_code %></td>
+      <td><%= ent.ent_name %></td>
+      <td><%= ent.lon %></td>
+      <td><%= ent.lat %></td>
+      <td><%= ent.gas_st_nums %></td>
+      <td><%= ent.water_st_nums %></td>
+    </tr>
+  <% end %>
+
+</table>
